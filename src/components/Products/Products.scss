@@ -1,0 +1,39 @@
+.products {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    color: #fff;
+    justify-content: center;
+    align-items: start;
+    min-height: calc(100vh - 100px);
+
+    &__actions {
+        position: absolute;
+        right: 50px;
+        top: 0;
+        svg {
+            font-size: 35px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        
+        &_empty {
+            margin-top: 50px;
+            button {
+                position: absolute;
+                top: 125%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.delete__product_window {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #181818;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    span {
+        font-size: 20px;
+        @media (max-width: 450px) {
+            font-size: 17px;
+        }
+    }
+
+    .btn__actions {
+        margin-top: 50px;
+        .delete {
+            margin-left: 125px;
+        }
+    }
+}

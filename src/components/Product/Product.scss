@@ -1,0 +1,32 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #525252;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left: 100px;
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &__name {
+        margin-top: 20px;
+        flex-shrink: 0;
+        max-height: 38px;
+        overflow: auto;
+        text-align: center;
+    }
+
+    &__img {
+        text-align: center;
+    }
+
+    .delete__product {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+}
