@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export const instance = axios.create({
-    baseURL: 'https://shop-backend-59ka.onrender.com',
+    baseURL: process.env.API_URL,
     withCredentials: true
 })
